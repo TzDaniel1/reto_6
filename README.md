@@ -220,3 +220,59 @@ if __name__ == "__main__":
     contagiados_totales = calcular_contagiados_totales(C, D)
     print(f"El número total de contagiados en NuncaLandia después de {D} días será: {contagiados_totales}")
 ```
+7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
+  + El promedio
+  + La mediana 
+  + El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
+  + Ordenar los números de forma ascendente
+  + Ordenar los números de forma descendente
+  + La potencia del mayor número elevado al menor número
+  + La raíz cúbica del menor número
+  + 
+```
+def calcular_promedio(a, b, c, d, e):
+    return (a + b + c + d + e) / 5
+
+def calcular_mediana(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    n = len(numeros_ordenados)
+    if n % 2 == 0:
+        return (numeros_ordenados[n//2 - 1] + numeros_ordenados[n//2]) / 2
+    else:
+        return numeros_ordenados[n//2]
+
+def calcular_promedio_multiplicativo(a, b, c, d, e):
+    producto = a * b * c * d * e
+    return producto**(1/5)
+
+def ordenar_ascendentemente(a, b, c, d, e):
+    return sorted([a, b, c, d, e])
+
+def ordenar_descendentemente(a, b, c, d, e):
+    return sorted([a, b, c, d, e], reverse=True)
+
+def calcular_potencia_mayor_menor(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    return numeros_ordenados[-1] ** numeros_ordenados[0]
+
+def calcular_raiz_cubica_menor(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    return numeros_ordenados[0] ** (1/3)
+
+if __name__ == "__main__":
+    a = float(input("Ingrese el número a: "))
+    b = float(input("Ingrese el número b: "))
+    c = float(input("Ingrese el número c: "))
+    d = float(input("Ingrese el número d: "))
+    e = float(input("Ingrese el número e: "))
+
+    print(f"Promedio: {calcular_promedio(a, b, c, d, e)}")
+    print(f"Mediana: {calcular_mediana(a, b, c, d, e)}")
+    print(f"Promedio multiplicativo: {calcular_promedio_multiplicativo(a, b, c, d, e)}")
+    print(f"Orden ascendente: {ordenar_ascendentemente(a, b, c, d, e)}")
+    print(f"Orden descendente: {ordenar_descendentemente(a, b, c, d, e)}")
+    print(f"Potencia mayor-menor: {calcular_potencia_mayor_menor(a, b, c, d, e)}")
+    print(f"Raíz cúbica del menor número: {calcular_raiz_cubica_menor(a, b, c, d, e)}")
+```
+
+8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
