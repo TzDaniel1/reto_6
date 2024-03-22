@@ -192,3 +192,31 @@ if vueltas >= 0:
 else:
     print(f"Queda debiendo: {abs(vueltas)} pesos")
 ```
+5. Haga un programa que utilice una función para calcular el valor de un préstamo `C` usando interés compuesto del `i` por `n` meses.
+```
+def calcular_monto_compuesto(C, i, n):
+    M = C * (1 + i/100)**n
+    return M
+
+if __name__ == "__main__":
+  C = float(input("Ingresa el capital inicial (préstamo) en pesos: "))
+  i = float(input("Ingresa la tasa de interés anual en porcentaje: "))
+  n = int(input("Ingresa el número de meses del préstamo: "))
+
+  monto_total = calcular_monto_compuesto(C, i, n)
+  print(f"El monto total al final de {n} meses es: {monto_total} pesos")
+```
+
+6. El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
+```
+def calcular_contagiados_totales(C, D):
+    contagiados_totales = C * 2**D
+    return contagiados_totales
+
+if __name__ == "__main__":
+    C = int(input("Ingresa el número de contagiados actuales en NuncaLandia: "))
+    D = int(input("Ingresa el número de días a partir de hoy: "))
+
+    contagiados_totales = calcular_contagiados_totales(C, D)
+    print(f"El número total de contagiados en NuncaLandia después de {D} días será: {contagiados_totales}")
+```
