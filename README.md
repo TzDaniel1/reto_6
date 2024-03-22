@@ -276,3 +276,35 @@ if __name__ == "__main__":
 ```
 
 8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+
+archivo adjunto llamado funciones
+
+9. Consultar qué es y cómo funciona *pip* en python.
+
+10. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
+
+    +NumPy: Biblioteca fundamental para computación numérica en Python.
+```
+pip install numpy
+
+```
+ 
+    +Pandas: Herramientas de análisis y manipulación de datos.
+```
+pip install pandas
+```
+    +Matplotlib: Biblioteca para crear visualizaciones gráficas en 2D.
+
+    +Seaborn: Biblioteca para visualización de datos basada en Matplotlib.
+
+    +Scikit-learn: Biblioteca para aprendizaje automático (machine learning).
+
+    +TensorFlow: Plataforma de aprendizaje automático desarrollada por Google.
+
+    +PyTorch: Biblioteca de aprendizaje profundo desarrollada por Facebook.
+
+    +Django: Framework web para desarrollo rápido y seguro en Python.
+
+    +Flask: Microframework web para aplicaciones pequeñas y simples.
+
+    +Requests: Librería HTTP para realizar solicitudes web.
