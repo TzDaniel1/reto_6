@@ -288,23 +288,54 @@ archivo adjunto llamado funciones
 pip install numpy
 
 ```
- 
+``
     +Pandas: Herramientas de análisis y manipulación de datos.
 ```
 pip install pandas
 ```
+``
     +Matplotlib: Biblioteca para crear visualizaciones gráficas en 2D.
-
+```
+pip install matplotlib
+```
+``
     +Seaborn: Biblioteca para visualización de datos basada en Matplotlib.
-
+```
+pip install seaborn
+```
+``
     +Scikit-learn: Biblioteca para aprendizaje automático (machine learning).
 
+```
+pip install scikit-learn
+```
+``
     +TensorFlow: Plataforma de aprendizaje automático desarrollada por Google.
 
+```
+pip install tensorflow
+```
+``
     +PyTorch: Biblioteca de aprendizaje profundo desarrollada por Facebook.
 
+```
+pip install torch torchvision
+```
+``
     +Django: Framework web para desarrollo rápido y seguro en Python.
 
+```
+pip install django
+```
+``
     +Flask: Microframework web para aplicaciones pequeñas y simples.
 
+```
+pip install flask
+```
+``
     +Requests: Librería HTTP para realizar solicitudes web.
+
+```
+pip install requests
+```
