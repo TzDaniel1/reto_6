@@ -1,0 +1,28 @@
+def calcular_promedio(a, b, c, d, e):
+    return (a + b + c + d + e) / 5
+
+def calcular_mediana(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    n = len(numeros_ordenados)
+    if n % 2 == 0:
+        return (numeros_ordenados[n//2 - 1] + numeros_ordenados[n//2]) / 2
+    else:
+        return numeros_ordenados[n//2]
+
+def calcular_promedio_multiplicativo(a, b, c, d, e):
+    producto = a * b * c * d * e
+    return producto**(1/5)
+
+def ordenar_ascendentemente(a, b, c, d, e):
+    return sorted([a, b, c, d, e])
+
+def ordenar_descendentemente(a, b, c, d, e):
+    return sorted([a, b, c, d, e], reverse=True)
+
+def calcular_potencia_mayor_menor(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    return numeros_ordenados[-1] ** numeros_ordenados[0]
+
+def calcular_raiz_cubica_menor(a, b, c, d, e):
+    numeros_ordenados = sorted([a, b, c, d, e])
+    return numeros_ordenados[0] ** (1/3)
